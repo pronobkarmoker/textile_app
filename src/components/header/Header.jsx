@@ -1,5 +1,6 @@
 
 "use client"
+import Link from "next/link";
 import React, { useState } from "react";
 
 function Header() {
@@ -18,9 +19,9 @@ function Header() {
 
         {/* Buttons on the Right */}
         <div className="hidden md:flex gap-4">
-          <button className="text-gray-700 px-3 py-2 hover:bg-gray-100 rounded-md">Button 1</button>
-          <button className="text-gray-700 px-3 py-2 hover:bg-gray-100 rounded-md">Button 2</button>
-          <button className="text-gray-700 px-3 py-2 hover:bg-gray-100 rounded-md">Button 3</button>
+          <button className="text-gray-700 px-3 py-2 hover:bg-gray-100 border-2 rounded-md">0172656464</button>
+          <button className="text-gray-700 px-3 py-2 hover:bg-gray-100  border-2 rounded-md">Button 2</button>
+          <button className="text-white px-3 py-2 hover:bg-red-400 bg-red-600 rounded-md"><Link href="/contact-us">Contact Us</Link></button>
         </div>
 
         {/* Mobile Menu Button */}

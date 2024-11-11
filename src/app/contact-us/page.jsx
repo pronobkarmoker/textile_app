@@ -9,11 +9,13 @@ export default function ContactUsPage() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        {/* Left Side: Contact Info */}
+        {/* Left Side: Address */}
         <div className="flex flex-col items-start">
           <div className="text-6xl text-red-600 mb-4">📍</div> {/* Placeholder logo */}
           <h2 className="text-2xl font-semibold mb-4">Our Address</h2>
-          <p className="text-gray-700 mb-2">1234 Street Name, City, Country</p>
+          <p className="text-gray-700 mb-2">
+            1234 Example Street, Example City, Country 12345
+          </p>
           <p className="text-gray-700 mb-2">Phone: (123) 456-7890</p>
           <p className="text-gray-700">Email: info@company.com</p>
         </div>
@@ -21,13 +23,21 @@ export default function ContactUsPage() {
         {/* Right Side: Contact Form */}
         <form className="flex flex-col space-y-4">
           
-          {/* Name Input */}
-          <input
-            type="text"
-            placeholder="Name"
-            className="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
-            required
-          />
+          {/* Name and Phone in a Row */}
+          <div className="flex flex-col md:flex-row gap-4">
+            <input
+              type="text"
+              placeholder="Name"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Phone"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+          </div>
           
           {/* Email Input */}
           <input
