@@ -1,5 +1,6 @@
 
 "use client"
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -15,7 +16,7 @@ function Header() {
       {/* Top Header */}
       <div className="flex justify-between max-w-screen-xl mx-auto items-center bg-white p-4 shadow-md">
         {/* Logo */}
-        <div className="text-xl font-bold">MyLogo</div>
+        <div className="text-xl font-bold"><Link href="/"><Image src="/logo.png" width="200" height="100" alt="logo" /></Link></div>
 
         {/* Buttons on the Right */}
         <div className="hidden md:flex gap-4">
