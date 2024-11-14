@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -5,7 +6,7 @@ import axios from "axios";
 const useFetch = (url) => {
   const [data, setData] = useState(null); // To store the fetched data
   const [loading, setLoading] = useState(true); // To track loading state
-  const [error, setError] = useState(null); // To store error state
+  const [error, setError] = useState(null); 
 
   useEffect(() => {
     const fetchData = async () => {
